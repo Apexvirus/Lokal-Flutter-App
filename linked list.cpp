@@ -1,23 +1,23 @@
 #include<iostream>
 using namespace std;
 
-class node{
-    public:
+class node {
+public:
     int data;
     node *next;
-    node(){
+    node() {
         data=0;
         next= NULL;
     }
 };
 
 
-int main(){
+int main() {
     node *head;
     node *one= NULL;
     node *two= NULL;
     node *three= NULL;
-    
+
 
     one = new node();
     two = new node();
@@ -34,7 +34,7 @@ int main(){
     three->next = NULL;
     node* temp= head;
 
-    while(temp != NULL){
+    while(temp != NULL) {
         cout<<temp->data<<" ";
         temp = temp->next;
     }
